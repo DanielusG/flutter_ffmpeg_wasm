@@ -10,13 +10,15 @@ import 'package:js/js_util.dart';
 @JS()
 @anonymous
 abstract class CreateFFmpegParam {
-  external factory CreateFFmpegParam({bool? log, String? corePath});
+  external factory CreateFFmpegParam({bool? log, String? corePath, String? mainName});
 
   /// Whether Enable or Disable ffmpeg log to console.
   external bool? get log;
 
   /// Path URL of ffmpeg-core library.
   external String? get corePath;
+
+  external String? get mainName;
 }
 
 @JS()
